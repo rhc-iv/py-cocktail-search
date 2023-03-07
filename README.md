@@ -46,7 +46,7 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/rhc-iv/py-space-invaders/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/rhc-iv/py-cocktail-search/issues). 
 
 ## Show your support
 
