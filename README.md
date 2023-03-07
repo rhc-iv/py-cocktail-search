@@ -13,7 +13,7 @@
   </p>
 </p>
 
-### 🛋️ [Homepage](https://github.com/rhc-iv/py-space-invaders)
+### 🛋️ [Homepage](https://github.com/rhc-iv/py-cocktail-search)
 
 ---
 
