@@ -20,7 +20,7 @@
 > A `streamlit` app (using `requests`) to query the **CocktailDB** API and return cocktail details.
 
 <p align="center">
-  <img alt="Space Invaders Screenshot" src="https://github.com/rhc-iv/py-space-invaders/blob/main/screenshot.png?raw=true" width="800" height="800"/>
+  <img alt="CocktailDB Search Screenshot" src="https://github.com/rhc-iv/py-cocktail-search/blob/main/screenshot.png?raw=true" />
 </p>
 
 ## Usage
