@@ -43,17 +43,28 @@ if st.sidebar.button('Submit'):
     selected_drink_data = selected_drink_response.json()
     selected_drink_details = selected_drink_data['drinks'][0]
 
-    # Display the selected drink details in the main Streamlit window:
+    # Display the selected drink details in the main Streamlit window with tabs:
     st.header('Cocktail Details')
-    st.subheader(selected_drink_details['strDrink'].title())
-    st.image(selected_drink_details['strDrinkThumb'], width=200)
-    st.markdown('**Category:** ' + selected_drink_details['strCategory'])
-    st.markdown('**Glass:** ' + selected_drink_details['strGlass'])
-    st.markdown('**Ingredients:**')
-    for i in range(1, 16):
-        ingredient_name = selected_drink_details[f'strIngredient{i}']
-        if ingredient_name:
-            ingredient_measurement = selected_drink_details[f'strMeasure{i}']
-            st.write(f'- **{ingredient_name}** {ingredient_measurement}')
-    st.markdown(
-        '**Instructions:** ' + selected_drink_details['strInstructions'])
+    tabs = st.tabs(
+        ['Image', 'Category', 'Glass', 'Ingredients', 'Instructions'])
+
+    with tabs[0]:
+        st.image(selected_drink_details['strDrinkThumb'], width=200)
+
+    with tabs[1]:
+        st.write(selected_drink_details['strCategory'])
+
+    with tabs[2]:
+        st.write(selected_drink_details['strGlass'])
+
+    with tabs[3]:
+        st.markdown('**Ingredients:**')
+        for i in range(1, 16):
+            ingredient_name = selected_drink_details[f'strIngredient{i}']
+            if ingredient_name:
+                ingredient_measurement = selected_drink_details[
+                    f'strMeasure{i}']
+                st.write(f'- **{ingredient_name}** {ingredient_measurement}')
+
+    with tabs[4]:
+        st.write(selected_drink_details['strInstructions'])
