@@ -13,6 +13,12 @@ ingredients = [d['strIngredient1'] for d in data['drinks']]
 # Sort the ingredients alphabetically
 ingredients.sort()
 
+# Create a title for the Streamlit app:
+st.title('CocktailDB Lookup')
+
+# Create a title for the sidebar:
+st.sidebar.title('Find a cocktail!')
+
 # Create a Streamlit selectbox with the sorted ingredients list:
 selected_ingredient = st.sidebar.selectbox(
     'Select an ingredient:',
