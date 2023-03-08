@@ -27,17 +27,19 @@
 
 ## Usage
 
+You can immediately use the app here:
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/rhc-iv/pycocktail-search/app.py/)
+
+Otherwise:
+
 - Open `app.py` in the editor/IDE of your choice.
   - Ensure that `streamlit` and `requests` are installed in your virtual environment using `pip` or any other module installer.
   - From your terminal (and in the same directory as `app.py`), run the command `streamlit run app.py`
   - Once the **Streamlit** app is running in your browser, ensure the app reloads upon file changes (found in the upper-right corner 'hamburger' menu under _Settings_.
 - Select a cocktail ingredient from the first dropdown box in the sidebar.
 - Next, select one of the cocktails from the second dropdown box in the sidebar and press the _**Submit**_ button.
-- The app's main window will now show various information about the cocktail selected.
-
-## 📝 To-Do
-
-- Divide result data into separate tabs in the main window using the `st.tabs` method.
+- The app's main window displays information about the selected cocktail split among various tabs.
 
 ## 👤 Author
 
